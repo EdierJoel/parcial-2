@@ -23,7 +23,8 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="img/logo.png" href="img/logo.png"/>
@@ -34,7 +35,7 @@
 
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <img class="navbar-brand js-scroll-trigger" src = "img/FIRSTPAGELOGO.png">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,14 +69,28 @@
     </div>
   </nav>
 
-  <!-- Header -->
+  <div class="left">
+       <span class="fa fa-chevron-left"></span>
+       </div>
+       <div class="right">
+       <span class="fa fa-chevron-right"></span>
+       </div>  
+
+ <!-- Header -->
   <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">¡Bienvenidos a nuestra página oficial!</div>
-        <div class="intro-heading text-uppercase">Estás listo para vivir ésta experiencia</div>
-        <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>-->
-      </div>
+        <div class="container">
+            <!--<div class="row">
+              <div class="col-lg-6 offset-lg-1">
+              </div>-->
+     </div> 
+ <div class="slideshow">
+  <ul class="slider">
+      <li><img src="img/header-bg.jpg" alt=""></li>
+      <li><img src="img/proyector.png" alt=""></li>
+     </ul> 
+    <!-- <ol class="pagination">
+     </ol>-->
+   </div>
     </div>
   </header>
 
