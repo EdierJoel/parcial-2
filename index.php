@@ -51,8 +51,8 @@
           <a class="nav-link js-scroll-trigger dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Productos</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Cañones</a>
-              <a class="dropdown-item" href="#">Tandas</a>
-              <a class="dropdown-item" href="#">Gastos</a>
+              <a class="dropdown-item" href="http://tandas.smoothoperators.com.mx/modulos/login/index.php/">Tandas</a>
+              <a class="dropdown-item" href="http://gastos.smoothoperators.com.mx/modulos/login/index.php/">Gastos</a>
          </div>
           </div>
           <li class="nav-item">
@@ -350,30 +350,30 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Nombre *" required="required" data-validation-required-message="Porfavor pon tu nombre.">
+                  <input class="form-control" id="name" type="text" placeholder="Nombre *" required="required" data-validation-required-message="Por favor pon tu nombre.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Correo electronico *" required="required" data-validation-required-message="Porfavor pon tu correo electronico.">
+                  <input class="form-control" id="email" type="email" placeholder="Correo electronico *" required="required" data-validation-required-message="Por favor pon tu correo electronico.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Telefono *" required="required" data-validation-required-message="Porfavor pon tu numero de telefono.">
+                  <input class="form-control" id="phone" type="tel" placeholder="Telefono *" required="required" data-validation-required-message="Por favor pon tu numero de telefono.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Ciudad*" required="required" data-validation-required-message="Porfavor pon tu  ciudad.">
+                  <input class="form-control" id="name" type="text" placeholder="Ciudad*" required="required" data-validation-required-message="Por favor pon tu ciudad.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Estado *" required="required" data-validation-required-message="Porfavor pon tu Estado.">
+                  <input class="form-control" id="name" type="text" placeholder="Estado *" required="required" data-validation-required-message="Por favor pon tu Estado.">
                   <p class="help-block text-danger"></p>
                 </div>
                
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Comentario *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <textarea class="form-control" id="message" placeholder="Comentario *" required="required" data-validation-required-message="Por favor pon tu comentario."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>              
