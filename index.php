@@ -209,7 +209,7 @@
         <option value="3">cañones</option>
       </select>
     </div>
-          <input type="submit" class="btn-submit" value="Suscribirse">
+          <input type="submit" class="btn-submit" value="Enviar">
         </form>
       </div>
     </div>
