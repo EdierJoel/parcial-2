@@ -1,3 +1,0 @@
-Edier
-
-Slider y Navbar
