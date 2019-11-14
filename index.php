@@ -35,7 +35,7 @@
 
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <img class="navbar-brand js-scroll-trigger" src = "img/FIRSTPAGELOGO.png">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
          <div class="nav-item dropdown show">
           <a class="nav-link js-scroll-trigger dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Productos</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Cañones</a>
+              <a class="dropdown-item"  href="#">Cañones</a>
               <a class="dropdown-item" href="http://tandas.smoothoperators.com.mx/modulos/login/index.php/">Tandas</a>
               <a class="dropdown-item" href="http://gastos.smoothoperators.com.mx/modulos/login/index.php/">Gastos</a>
          </div>
