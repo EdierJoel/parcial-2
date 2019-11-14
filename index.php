@@ -339,10 +339,12 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Contáctanos</h2>
-          <div class="row">
-          	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8758113633176!2d-86.84963468509518!3d21.15733998875221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID!5e0!3m2!1sen!2smx!4v1573106611849!5m2!1sen!2smx" width="1100" height="255" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </br>
+        </br>
+          <div>
+          	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8758113633176!2d-86.84963468509518!3d21.15733998875221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID!5e0!3m2!1sen!2smx!4v1573106611849!5m2!1sen!2smx" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
-          <h3 class="section-subheading text-muted">Cualquier duda contáctanos.</h3>
+          <h3 class="section-subheading text-muted">.</h3>
         </div>
       </div>
       <div class="row">
