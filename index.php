@@ -146,11 +146,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
+            <h4>Cañones</h4>
+            <p class="text-muted">Obtén grandes beneficios al suscribirte.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -163,8 +163,8 @@
             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
+            <h4>Tandas</h4>
+            <p class="text-muted">Obtén grandes beneficios al suscribirte.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -177,22 +177,8 @@
             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+            <h4>Gastos</h4>
+            <p class="text-muted">Obtén grandes beneficios al suscribirte.</p>
           </div>
         </div>
   </section>
