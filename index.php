@@ -45,13 +45,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">¿Quiénes Somos?</a>
           </li>
          <div class="nav-item dropdown show">
-          <a class="nav-link js-scroll-trigger dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+          <a class="nav-link js-scroll-trigger dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Productos</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Cañones</a>
               <a class="dropdown-item" href="#">Tandas</a>
@@ -97,7 +94,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Nuestros servicios</h2>
+          <h2 class="section-heading text-uppercase">Nuestros Productos.</h2>
         </div>
       </div>
       <div class="row text-center">
@@ -214,7 +211,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Nuestro equipo de trabajo.</h2>
-          <h3 class="section-subheading text-muted">Solo deja todo en nuestras manos.</h3>
+          <h3 class="section-subheading text-muted">Siempre innovando.</h3>
         </div>
       </div>
       <div class="row">
