@@ -217,28 +217,35 @@
 
     <!-- FORM PROMO -->
   
-  <form>
-    <CENTER>
-  <div class="form-row align-items-center">
-    <div class="col-auto my-1">
+  <div class="contenedor">
+    <article>
+      <h1>Ventana Emergente Animada</h1>
+      <button id="btn-abrir-popup" class="btn-abrir-popup">Abrir Ventana Emergente</button>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <form action="">
+          <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <input type="email" placeholder="Codigo de Promociones">
+          </div>
+              <div class="col-auto my-1">
       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
       <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
         <option selected>Escoge</option>
         <option value="1">Tanda</option>
         <option value="2">Promoción</option>
+        <option value="3">cañones</option>
       </select>
     </div>
-        <div class="col">
-      <input type="text" class="form-control" placeholder="CODIGO">
-    </div>
-    <div class="col-auto my-1">
-    </div>
-    <div class="col-auto my-1">
-      <button type="submit" class="btn btn-primary">Enviar</button>
+          <input type="submit" class="btn-submit" value="Suscribirse">
+        </form>
+      </div>
     </div>
   </div>
-  </CENTER>
-</form>
+
+  <script src="popup.js"></script>
 
   <!-- About 
   <section class="page-section" id="about">

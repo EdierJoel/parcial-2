@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>first Page</title>
 
@@ -16,6 +19,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href=" css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="estilos.css">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -182,28 +188,33 @@
 
     <!-- FORM PROMO -->
   
-  <form>
-    <CENTER>
-  <div class="form-row align-items-center">
-    <div class="col-auto my-1">
+ <div class="contenedor">
+    <article>
+      <button id="btn-abrir-popup" class="btn-abrir-popup">INGRESA TU CODIGO</button>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <form action="">
+          <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <input type="email" placeholder="Codigo de Promociones">
+          </div>
+              <div class="col-auto my-1">
       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
       <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
         <option selected>Escoge</option>
         <option value="1">Tanda</option>
         <option value="2">Promoción</option>
+        <option value="3">cañones</option>
       </select>
     </div>
-        <div class="col">
-      <input type="text" class="form-control" placeholder="CODIGO">
-    </div>
-    <div class="col-auto my-1">
-    </div>
-    <div class="col-auto my-1">
-      <button type="submit" class="btn btn-primary">Enviar</button>
+          <input type="submit" class="btn-submit" value="Suscribirse">
+        </form>
+      </div>
     </div>
   </div>
-  </CENTER>
-</form>
+
 
   <!-- Team -->
   <section class="bg-light page-section" id="team">
@@ -636,6 +647,8 @@
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+
+  <script src="popup.js"></script>
 
 <script type="text/javascript" src="jquery-3.2.1.js"></script>
   <script type="text/javascript" src="slick.js"></script>
