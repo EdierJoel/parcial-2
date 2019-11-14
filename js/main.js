@@ -20,11 +20,11 @@ $('.pagination li').click(pagination);
 $('.right span').click(nextSlider);
 $('.left span').click(prevSlider);
 
-setInterval(function(){ // Esta funcion hace que los Sliders cambien Automaticamente cada 4 seg.
+//setInterval(function(){ // Esta funcion hace que los Sliders cambien Automaticamente cada 4 seg.
 
-	nextSlider();
+	//nextSlider();
 
-}, 4000);
+//}, 4000);
 
 //Funciones------------------
 function pagination(){

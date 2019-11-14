@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">¿Quiénes Somos?</a>
@@ -69,29 +69,27 @@
     </div>
   </nav>
 
+  <!--Slider <flechas>
+
   <div class="left">
        <span class="fa fa-chevron-left"></span>
        </div>
        <div class="right">
        <span class="fa fa-chevron-right"></span>
-       </div>  
+       </div>-->  
 
  <!-- Header -->
   <header class="masthead">
-        <div class="container">
-            <!--<div class="row">
-              <div class="col-lg-6 offset-lg-1">
-              </div>-->
-     </div> 
- <div class="slideshow">
-  <ul class="slider">
-      <li><img src="img/header-bg.jpg" alt=""></li>
-      <li><img src="img/proyector.png" alt=""></li>
-     </ul> 
-    <!-- <ol class="pagination">
-     </ol>-->
-   </div>
-    </div>
+        <div class="container"></div> 
+        <div class="slideshow">
+        <ul class="slider">
+          <li><img src="img/header-bg.jpg" alt=""></li>
+          <li><img src="img/head3.png" alt=""></li>
+        </ul> 
+             <ol class="pagination">
+            </ol>
+          </div>
+      </div>
   </header>
 
   <!-- Services -->
@@ -100,7 +98,6 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Nuestros servicios</h2>
-          <h3 class="section-subheading text-muted">First Page company</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -109,24 +106,24 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Tienda</h4>
-          <p class="text-muted">Gran opción para aumentar las ventas en su negocio, diseño de estrategia para posicionamiento en SEO.</p>
+          <h4 class="service-heading">Cañones</h4>
+          <p class="text-muted">Nos decidimos a desarrollar un sistema con el cuál podrás llevar un control sobre los apartados de Cañones, este proyecto está hecho para todo el público, pero en específico a las escuelas y empresas que cuentan con estos equipos.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Responsivo</h4>
-          <p class="text-muted">Creado para los distintos tamaños de dispositivos y pantallas.</p>
+          <h4 class="service-heading">Tandas</h4>
+          <p class="text-muted">A veces se nos complica el ahorro de dinero y se nos es muy difícil buscar una manera para hacerlo,  por lo que ofrecemos este gran sistema con el cuál tu podrás organizar tus propias tandas entre familiares o amigos, tú decides la duración y monto.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-at fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Web</h4>
-          <p class="text-muted">Creamos un diseño especial para ti y para tu empresa. cumpliendo las cualidades específicas de los clientes. </p>
+          <h4 class="service-heading">Gastos</h4>
+          <p class="text-muted">Hoy en día sabemos que por falta de tiempo se nos complica la organización de nuestros gastos, es por ello por lo que nos decidimos a crear este sistema para ti. Es hora de que tu lleves el control de tus gastos.</p>
         </div>
       </div>
     </div>
@@ -197,41 +194,7 @@
             <h4>Lines</h4>
             <p class="text-muted">Branding</p>
           </div>
-
         </div>
-        <!-- COMENTARIO
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-             <!-- COMENTARIO
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
-          </div>
-        </div>
-      </div>
-    </div>
-     -->
   </section>
 
     <!-- FORM PROMO -->
@@ -259,93 +222,12 @@
   </CENTER>
 </form>
 
-  <!-- About 
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
--->
   <!-- Team -->
   <section class="bg-light page-section" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Nuestro maravilloso equipo de trabajo.</h2>
+          <h2 class="section-heading text-uppercase">Nuestro equipo de trabajo.</h2>
           <h3 class="section-subheading text-muted">Solo deja todo en nuestras manos.</h3>
         </div>
       </div>
@@ -353,8 +235,32 @@
         <div class="col-sm-3">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/fonseca.jpeg" alt="">
-            <h4>Gabriel Fonseca</h4>
-            <p class="text-muted">Diseñador encargado</p>
+            <h4>Desarrollador Web</h4>
+            <p class="text-muted">Diseñador Web</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/joel.jpg" alt="">
+            <h4>Edier Cab</h4>
+            <p class="text-muted">Desarrollador Web</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -378,31 +284,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/hugo.jpeg" alt="">
             <h4>Hugo Arroyo</h4>
-            <p class="text-muted">Comercializador Principal</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/edier.jpeg" alt="">
-            <h4>Edier Cab</h4>
-            <p class="text-muted">Desarrollador principal</p>
+            <p class="text-muted">Desarrollador Web</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -426,7 +308,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
             <h4>Isaac Gamboa</h4>
-            <p class="text-muted">Desarrollador</p>
+            <p class="text-muted">Desarrollador Web</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -450,7 +332,7 @@
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Estamos conformados de personas comprometidas, resposables y honestas. Contamos con más de 8 años de experiencia trabajando en el diseño y desarrollo de sistemas.</p>
+          <p class="large text-muted">Estamos conformados de personas comprometidas, responsables y honestas. Contamos con más de 8 años de experiencia trabajando en el diseño y desarrollo de sistemas.</p>
         </div>
       </div>
     </div>
@@ -465,36 +347,7 @@
                 <div> <img src="img/logo/benq.jpg" alt="  slider image"></div>
  </div>
 
-  <!-- Clients 
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/benq.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/epson.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/samsung.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/sony.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-   <!-- Contact -->
+   <!--Contact-->
   <section class="page-section" id="contact">
     <div class="container">
       <div class="row">
@@ -557,34 +410,24 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
+          <span class="copyright">Copyright &copy; Logia Corp.</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="http://www.twitter.com">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="http://www.facebook.com">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="http://www.linkedin.com">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
             </li>
           </ul>
         </div>
