@@ -399,20 +399,20 @@
         <form method="POST" >
   <div class="form-row">
     <div class="col">
-      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required="required" >
+      <input type="text" name="nombre" class="form-control" placeholder="Nombre" >
     </div>
     <div class="col">
-      <input type="text" id="email" name="email" class="form-control" placeholder="Email" required="required">
+      <input type="text"  name="email" class="form-control" placeholder="Email">
     </div>
         <div class="col">
-      <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" required="required" >
+      <input type="text"  name="telefono" class="form-control" placeholder="Telefono" >
     </div>
   </div>
     <div class="form-group">
     <label for="inputAddress2"></label>
-    <input type="text" id="comentario" name="comentario" class="form-control" id="inputAddress2" placeholder="Mensaje">
+    <input type="text" id="comentario" name="comentario" class="form-control"  placeholder="Mensaje">
   </div>
-<button type="submit" class="btn btn-warning">Enviar</button>
+<button type="submit" name="enviar" class="btn btn-warning">Enviar</button>
 
 </form>
 <?php 

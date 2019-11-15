@@ -1,16 +1,16 @@
 <?php 
 
  if (isset($_POST['enviar'])) {
- 	if(!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefono']) && !empty($_POST['comentario'])){
- 		$nombre = $_POST ['nombre'];
+ 	if(!empty($_POST['name']) && !empty($_POST['asunto']) && !empty($_POST['msg']) && !empty($_POST['email'])){
+ 		$name = $_POST ['name'];
+ 		$asunto = $_POST ['asunto'];
+ 		$msg = $_POST ['msg'];
  		$email = $_POST ['email'];
- 		$telefono = $_POST ['telefono'];
- 		$comentario = $_POST ['comentario'];
  		$header	= "From: noreply@example.com" . "\r\n";
  		$header = "reply-to: noreply@example.com". "\r\n";
  		$header = "X-Mailer: PHP/". phpversion();
  		$mail = @mail($email,$nombre,$comentario);
- 		if ($mai) {
+ 		if ($mail) {
  			echo "<h4> mail enviado exitosamente!!!</h4>";
  			# code...
  		}
