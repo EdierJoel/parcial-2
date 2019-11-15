@@ -107,12 +107,12 @@
           <h4 class="service-heading">Cañones</h4>
           <p class="text-muted">Nos decidimos a desarrollar un sistema con el cuál podrás llevar un control sobre los apartados de Cañones, este proyecto está hecho para todo el público, pero en específico a las escuelas y empresas que cuentan con estos equipos.</p>
         </div>
-        <div class="col-md-3">
-            <img class="img-fluid d-block mx-auto" src="img/damda.jpeg" alt="">
+        <div class="col-md-4">
+            <img class="img-fluid d-block mx-auto" src="img/damda.png" alt="">
           <h4 class="service-heading">Dámda</h4>
           <p class="text-muted">A veces se nos complica el ahorro de dinero y se nos es muy difícil buscar una manera para hacerlo,  por lo que ofrecemos este gran sistema con el cuál tu podrás organizar tus propias tandas entre familiares o amigos, tú decides la duración y monto. "Tandeando tu futuro"</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
          </br>
             <img class="img-fluid d-block mx-auto" src="img/MS-Logo.png" alt="">
              </br>
