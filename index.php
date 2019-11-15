@@ -396,7 +396,7 @@
       </div>
 
 
-        <form method="POST" action="enviar2.php">
+        <form method="POST" >
   <div class="form-row">
     <div class="col">
       <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required="required" >
@@ -405,7 +405,7 @@
       <input type="text" id="email" name="email" class="form-control" placeholder="Email" required="required">
     </div>
         <div class="col">
-      <input type="text" id="mensaje" name="mensaje" class="form-control" placeholder="Telefono" required="required" >
+      <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Telefono" required="required" >
     </div>
   </div>
     <div class="form-group">
