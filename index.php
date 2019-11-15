@@ -220,7 +220,7 @@
         <div class="col-sm-3">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/fonseca.jpeg" alt="">
-            <h4>Gabriel Fonseca</h4>
+            <h4>Desarrollador Web</h4>
             <p class="text-muted">Diseñador Web</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
@@ -331,7 +331,7 @@
       <img class="img-fluid d-block mx-auto" src="img/logos/cañones.jpeg" alt="">
     </div>
     <div class="carousel-item">
-      <img class="img-fluid d-block mx-auto" src="img/logos/tandas.jpg" alt="">
+      <img class="img-fluid d-block mx-auto" src="img/logos/gastos.jpeg" alt="">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
