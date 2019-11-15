@@ -6,6 +6,6 @@ $subject = $_POST['subject'];
 $content="From: $name \n Email: $email \n Message: $message";
 $recipient = "elder.gamboa@hotmail.com";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $content, $mailheader) or die("Error!");
+@mail($recipient, $subject, $content, $mailheader) or die("Error!");
 echo "Email sent!";
 ?>
