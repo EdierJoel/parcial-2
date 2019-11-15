@@ -337,16 +337,10 @@
  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="img-fluid d-block mx-auto" src="img/logos/benq.jpg" alt="">
+      <img class="img-fluid d-block mx-auto" src="img/logos/cañones.jpeg" alt="">
     </div>
     <div class="carousel-item">
-      <img class="img-fluid d-block mx-auto" src="img/logos/samsung.png" alt="">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid d-block mx-auto" src="img/logos/sony.png" alt="">
-    </div>
-     <div class="carousel-item">
-      <img class="img-fluid d-block mx-auto" src="img/logos/epson.png" alt="">
+      <img class="img-fluid d-block mx-auto" src="img/logos/cañones.jpeg" alt="">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
