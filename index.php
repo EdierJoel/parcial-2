@@ -353,6 +353,37 @@
   </a>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    <!--Contact-->
   <section class="page-section" id="contact">
     <div class="container">
@@ -367,39 +398,27 @@
           <h3 class="section-subheading text-muted">.</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate" action="enviar2.php">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
 
-                  <input class="form-control" id="nombre" type="text" placeholder="Nombre *" required="required" data-validation-required-message="Por favor pon tu nombre.">
-                  <p class="help-block text-danger"></p>
 
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Correo electronico *" required="required" data-validation-required-message="Por favor pon tu correo electronico.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="mensaje" type="tel" placeholder="Telefono *" required="required" data-validation-required-message="Por favor pon tu numero de telefono.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Comentario *" required="required" data-validation-required-message="Por favor pon tu comentario."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>              
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">enviar</button>
-              </div>
-            </div>
-          </form>
+        <form method="POST" action="enviar2.php">
+  <div class="form-row">
+    <div class="col">
+      <input type="text" id="nombre" class="form-control" placeholder="Nombre" required="required" >
+    </div>
+    <div class="col">
+      <input type="text" id="email" class="form-control" placeholder="Email" required="required">
+    </div>
+        <div class="col">
+      <input type="text" id="mensaje" class="form-control" placeholder="Telefono" required="required" >
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" id="comentario" class="form-control" id="inputAddress2" placeholder="Mensaje">
+  </div>
+<button type="submit" class="btn btn-warning">Enviar</button>
+
+</form>
         </div>
       </div>
     </div>
@@ -674,26 +693,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
-  <script src="popup.js"></script>
-
-<script type="text/javascript" src="jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="slick.js"></script>
-    <script type="text/javascript" src="slick.min.js"></script>
-       <script type="text/javascript" src="script.js"></script>
-       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="script.js">
-          $(document).ready(function(){
-            $('.thing').slick({
-              dots:true,
-              arrows:false,
-              autoplay: true,
-              autoplaySpeed:1000
-            });
-          });
-        </script>
 
 
   <!-- Custom scripts for this template -->
