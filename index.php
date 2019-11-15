@@ -331,7 +331,7 @@
       <img class="img-fluid d-block mx-auto" src="img/logos/cañones.jpeg" alt="">
     </div>
     <div class="carousel-item">
-      <img class="img-fluid d-block mx-auto" src="img/logos/gastos.jpg" alt="">
+      <img class="img-fluid d-block mx-auto" src="img/logos/tandas.jpg" alt="">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
