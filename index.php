@@ -403,22 +403,24 @@
         <form method="POST" action="enviar2.php">
   <div class="form-row">
     <div class="col">
-      <input type="text" id="nombre" class="form-control" placeholder="Nombre" required="required" >
+      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required="required" >
     </div>
     <div class="col">
-      <input type="text" id="email" class="form-control" placeholder="Email" required="required">
+      <input type="text" id="email" name="email" class="form-control" placeholder="Email" required="required">
     </div>
         <div class="col">
-      <input type="text" id="mensaje" class="form-control" placeholder="Telefono" required="required" >
+      <input type="text" id="mensaje" name="mensaje" class="form-control" placeholder="Telefono" required="required" >
     </div>
   </div>
     <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" id="comentario" class="form-control" id="inputAddress2" placeholder="Mensaje">
+    <label for="inputAddress2"></label>
+    <input type="text" id="comentario" name="comentario" class="form-control" id="inputAddress2" placeholder="Mensaje">
   </div>
 <button type="submit" class="btn btn-warning">Enviar</button>
 
 </form>
+<?php 
+include("correo.php") ?>
         </div>
       </div>
     </div>
