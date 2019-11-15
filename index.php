@@ -119,7 +119,7 @@
         <div class="col-md-4">
             <img class="img-fluid d-block mx-auto" src="img/MS-Logo.png" alt="">
           <h4 class="service-heading">Gastos</h4>
-          <p class="text-muted">Hoy en día sabemos que por falta de tiempo se nos complica la organización de nuestros gastos, es por ello por lo que nos decidimos a crear este sistema para ti. Es hora de que tu lleves el control de tus gastos.</p>
+          <p class="text-muted">"MoneySafe" Es una empresa con un centro de operación en la ciudad de Cancún quintana roo México y enfoca sus actividades en proporcionar servicios de desarrollo de software. Nuestra empresa se encuentra conformada por un equipo de profesionales en Tecnologías de la Información y Comunicación. Contamos con una infraestructura más innovadora de equipo de computo y el conocimiento necesario para cubrir las solicitudes de servicio, mismos que permiten actualizar y obtener un sistema tecnológico, y de conocimiento organizacional, que proporciona un alto nivel de competitividad, todo eso con el firme propósito de incrementar el valor de su empresa y apoyarle a enfrentar en forma exitosa los retos de conquistar nuevos mercados.</p>
         </div>
       </div>
     </div>
