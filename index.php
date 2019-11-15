@@ -334,12 +334,32 @@
 
 
   <!-- Clients-->
-<div class="thing" id="wrapper">
-    <div> <img src="img/logo/benq.jpg" alt="  slider image"></div>
-        <div> <img src="img/logo/benq.jpg" alt="  slider image"></div>
-            <div> <img src="img/logo/benq.jpg" alt="  slider image"></div>
-                <div> <img src="img/logo/benq.jpg" alt="  slider image"></div>
- </div>
+<section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/benq.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/samsung.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/sony.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/epson.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
    <!--Contact-->
   <section class="page-section" id="contact">
