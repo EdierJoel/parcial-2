@@ -117,10 +117,7 @@
           <p class="text-muted">A veces se nos complica el ahorro de dinero y se nos es muy difícil buscar una manera para hacerlo,  por lo que ofrecemos este gran sistema con el cuál tu podrás organizar tus propias tandas entre familiares o amigos, tú decides la duración y monto.</p>
         </div>
         <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-at fa-stack-1x fa-inverse"></i>
-          </span>
+            <img class="img-fluid d-block mx-auto" src="img/MS-Logo.png" alt="">
           <h4 class="service-heading">Gastos</h4>
           <p class="text-muted">Hoy en día sabemos que por falta de tiempo se nos complica la organización de nuestros gastos, es por ello por lo que nos decidimos a crear este sistema para ti. Es hora de que tu lleves el control de tus gastos.</p>
         </div>
