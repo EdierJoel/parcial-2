@@ -452,16 +452,16 @@
                 <form>
                   <div class="row">
                       <div class="col">
-                          <input type="text" class="form-control" placeholder="Nombre">
+                          <input type="text" class="form-control" placeholder="Nombre" required="required">
                       </div>
                   <div class="col">
-                <input type="text" class="form-control" placeholder="Correo">
+                <input type="text" class="form-control" placeholder="Correo" required="required">
                 
                        </div>
                    </div>
                      <div class="form-group">
                     <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo">
+                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required="required">
                    </div>
                    <br>
                   
@@ -494,16 +494,16 @@
                 <form>
                   <div class="row">
                       <div class="col">
-                          <input type="text" class="form-control" placeholder="Nombre">
+                          <input type="text" class="form-control" placeholder="Nombre" required="required">
                       </div>
                   <div class="col">
-                <input type="text" class="form-control" placeholder="Correo">
+                <input type="text" class="form-control" placeholder="Correo" required="required">
                 
                        </div>
                    </div>
                      <div class="form-group">
                     <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo">
+                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required="required">
                    </div>
                    <br>
                   
@@ -536,16 +536,16 @@
                 <form>
                   <div class="row">
                       <div class="col">
-                          <input type="text" class="form-control" placeholder="Nombre">
+                          <input type="text" class="form-control" placeholder="Nombre" required="required">
                       </div>
                   <div class="col">
-                <input type="text" class="form-control" placeholder="Correo">
+                <input type="text" class="form-control" placeholder="Correo" required="required">
                 
                        </div>
                    </div>
                      <div class="form-group">
                     <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo">
+                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required="required">
                    </div>
                    <br>
                   
