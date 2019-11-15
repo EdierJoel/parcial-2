@@ -63,11 +63,13 @@ body {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	visibility: hidden;
+	visibility: hidden;ç
+	z-index: 1;
 }
 
 .overlay.active {
 	visibility: visible;
+	z-index: 1;
 }
 
 .popup {
@@ -78,7 +80,7 @@ body {
 	padding: 20px;
 	text-align: center;
 	width: 600px;
-	
+	z-index: 1;
 	transition: .3s ease all;
 	transform: scale(0.7);
 	opacity: 0;
