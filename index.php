@@ -85,8 +85,8 @@
           <li><img src="img/header-bg.jpg" alt=""></li>
           <li><img src="img/head3.png" alt=""></li>
         </ul> 
-             <ol class="pagination">
-            </ol>
+            <!-- <ol class="pagination">
+            </ol>-->
           </div>
       </div>
   </header>
