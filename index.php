@@ -157,7 +157,7 @@
             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Tandas</h4>
+            <h4>Dámda</h4>
             <p class="text-muted">Obtén grandes beneficios al suscribirte.</p>
           </div>
         </div>
@@ -432,18 +432,33 @@ include("correo.php") ?>
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
+
+
+                <!--Cañones-->
                 <h2 class="text-uppercase">Cañones</h2>
                  <br>
-                <form>
+                <form method="POST" action="include/canones.php">
                   <div class="row">
                       <div class="col">
-                          <input type="text" class="form-control" placeholder="Nombre" required="required">
+                          <input type="text" class="form-control" name="nombre_usr" placeholder="Nombre" required="required">
                       </div>
-                  <div class="col">
-                <input type="text" class="form-control" placeholder="Correo" required="required">
-                
-                       </div>
+
+                <div class="col">
+                <input type="text" class="form-control" name="matricula_usr" placeholder="Matricula" required="required">
+                </div>
+                </div>
+                 <br>
+                <div class="form-group">
+                <input type="text" class="form-control" name="telefono_usr" placeholder="Telefono" required="required">
+                </div>
+
+                <div class="row">
+                                <div class="col">
+                <input type="text" class="form-control" name="email_usr" placeholder="Email" required="required">
+                </div>
+                                <div class="col">
+                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required="required">
+                </div>
                    </div>
                      <div class="form-group">
                     <label for="inputAddress"></label>
@@ -474,25 +489,33 @@ include("correo.php") ?>
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Tandas</h2>
+
+
+
+                <!-- TANDAS -->
+                <h2 class="text-uppercase">Dámda</h2>
                  <br>
-                <form>
-                  <div class="row">
+               <form method="POST" action="include/damda.php">
+                      <div class="row">
                       <div class="col">
-                          <input type="text" class="form-control" placeholder="Nombre" required="required">
+                        <input type="text" name="Userld" class="form-control" placeholder="Nombre">
                       </div>
-                  <div class="col">
-                <input type="text" class="form-control" placeholder="Correo" required="required">
-                
-                       </div>
-                   </div>
-                     <div class="form-group">
-                    <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required="required">
-                   </div>
-                   <br>
-                  
+                      <div class="col">
+                        <input type="text" name="UserLastname" class="form-control" placeholder="Apellido">
+                      </div>
+                      </div>
+                          <div class="form-group col-md-6">
+      <label for="inputEmail4"></label>
+      <input type="email" class="form-control" name="UserEmail" id="inputEmail4" placeholder="Email">
+    </div>
+        <div class="form-group col-md-6">
+      <label for="inputPassword4"></label>
+      <input type="password" class="form-control" name="UserPassword" id="inputPassword4" placeholder="Contraseña">
+    </div>
+    </div>
+        <div class="form-group col-md-6">
+      <input type="text" class="form-control" name="codigo" id="codigo" placeholder="Codigo de promoción">
+    </div>
                    <button type="submit" class="btn btn-primary">Enviar</button>
               </form>
               </div>
@@ -502,6 +525,9 @@ include("correo.php") ?>
       </div>
     </div>
   </div>
+
+
+
 
   <!-- Modal 3 -->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -516,24 +542,29 @@ include("correo.php") ?>
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-                <!-- Project Details Go Here -->
+
+
+
+
+                <!-- GASTOS-->
                   <h2 class="text-uppercase">Gastos</h2>
                  <br>
-                <form>
-                  <div class="row">
-                      <div class="col">
-                          <input type="text" class="form-control" placeholder="Nombre" required="required">
-                      </div>
-                  <div class="col">
-                <input type="text" class="form-control" placeholder="Correo" required="required">
-                
-                       </div>
+                  <form method="POST" action="include/gastos.php">
+                  <div class="form-group">
+                  <input type="text" class="form-control" id="nombre_usr  " placeholder="Nombre" required="required">
                    </div>
-                     <div class="form-group">
-                    <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required="required">
+                                   <div class="row">
+                                <div class="col">
+                <input type="text" class="form-control" name="correo_usr" placeholder="Email" required="required">
+                </div>
+                                <div class="col">
+                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required="required">
+                </div>
                    </div>
                    <br>
+                     <div class="form-group">
+                  <input type="text" class="form-control" id="id_plan" placeholder="Plan" required="required">
+                   </div>
                   
                    <button type="submit" class="btn btn-primary">Enviar</button>
               </form>
