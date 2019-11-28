@@ -53,8 +53,8 @@
           <a class="nav-link js-scroll-trigger dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Productos</a>
             <div class="dropdown-menu">
               <a class="dropdown-item"  href="#">Cañones</a>
-              <a class="dropdown-item" href="http://tandas.smoothoperators.com.mx/modulos/login/index.php/">Tandas</a>
-              <a class="dropdown-item" href="http://gastos.smoothoperators.com.mx/modulos/login/index.php/">Gastos</a>
+              <a class="dropdown-item" href="#">Tandas</a>
+              <a class="dropdown-item" href="#">Gastos</a>
          </div>
           </div>
           <li class="nav-item">
@@ -360,7 +360,7 @@
       </div>
 
 
-        <form method="POST" >
+       <form action="submit.php" method="POST" >
   <div class="form-row">
     <div class="col">
       <input type="text" name="nombre" class="form-control" placeholder="Nombre" >
