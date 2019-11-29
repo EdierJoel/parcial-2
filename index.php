@@ -53,8 +53,8 @@
           <a class="nav-link js-scroll-trigger dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Productos</a>
             <div class="dropdown-menu">
               <a class="dropdown-item"  href="#">Cañones</a>
-              <a class="dropdown-item" href="http://tandas.smoothoperators.com.mx/modulos/login/index.php/">Tandas</a>
-              <a class="dropdown-item" href="http://gastos.smoothoperators.com.mx/modulos/login/index.php/">Gastos</a>
+              <a class="dropdown-item" href="#">Tandas</a>
+              <a class="dropdown-item" href="#">Gastos</a>
          </div>
           </div>
           <li class="nav-item">
@@ -108,7 +108,8 @@
           <p class="text-muted">Nos decidimos a desarrollar un sistema con el cuál podrás llevar un control sobre los apartados de Cañones, este proyecto está hecho para todo el público, pero en específico a las escuelas y empresas que cuentan con estos equipos.</p>
         </div>
         <div class="col-md-4">
-            <img class="img-fluid d-block mx-auto" src="img/damda.png" alt="">
+            <img class="img-fluid d-block mx-auto" src="img/damda1.png" alt="">
+             </br>
           <h4 class="service-heading">Dámda</h4>
           <p class="text-muted">A veces se nos complica el ahorro de dinero y se nos es muy difícil buscar una manera para hacerlo,  por lo que ofrecemos este gran sistema con el cuál tu podrás organizar tus propias tandas entre familiares o amigos, tú decides la duración y monto. "Tandeando tu futuro"</p>
         </div>
@@ -177,6 +178,7 @@
         </div>
   </section>
 
+<<<<<<< HEAD
     <!-- FORM PROMO 
   
  <div class="contenedor">
@@ -246,6 +248,8 @@
   </div>
 </form>
 
+=======
+>>>>>>> e0c67fdd3a20c95236dc886146a8726eed928fab
   <!-- Team -->
   <section class="bg-light page-section" id="team">
     <div class="container">
@@ -259,7 +263,7 @@
         <div class="col-sm-3">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/fonseca.jpeg" alt="">
-            <h4>Desarrollador Web</h4>
+            <h4>Gabriel Fonseca</h4>
             <p class="text-muted">Diseñador Web</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
@@ -399,7 +403,7 @@
       </div>
 
 
-        <form method="POST" >
+       <form action="submit.php" method="POST" >
   <div class="form-row">
     <div class="col">
       <input type="text" name="nombre" class="form-control" placeholder="Nombre" >
@@ -518,7 +522,7 @@ include("correo.php") ?>
   <!-- Modal 2 -->
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content" id="">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"></div>
@@ -526,37 +530,49 @@ include("correo.php") ?>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-8 mx-auto" id="myModal">
               <div class="modal-body">
 
 
 
                 <!-- TANDAS -->
-                <h2 class="text-uppercase">Dámda</h2>
+                <h3 class="text-uppercase" id="myBtn">Dámda Registro</h3>
                  <br>
-               <form method="POST" action="include/damda.php">
-                      <div class="row">
-                      <div class="col">
-                        <input type="text" name="Userld" class="form-control" placeholder="Nombre">
-                      </div>
-                      <div class="col">
-                        <input type="text" name="UserLastname" class="form-control" placeholder="Apellido">
-                      </div>
-                      </div>
-                          <div class="form-group col-md-6">
-      <label for="inputEmail4"></label>
-      <input type="email" class="form-control" name="UserEmail" id="inputEmail4" placeholder="Email">
-    </div>
-        <div class="form-group col-md-6">
-      <label for="inputPassword4"></label>
-      <input type="password" class="form-control" name="UserPassword" id="inputPassword4" placeholder="Contraseña">
-    </div>
-    </div>
-        <div class="form-group col-md-6">
-      <input type="text" class="form-control" name="codigo" id="codigo" placeholder="Codigo de promoción">
-    </div>
-                   <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+                <form id="myForm">
+                            <div class="modal-content">
+                                <div class="modal-body" style="padding:20px 30px;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre/s">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido/s">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electronico">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserPhone" placeholder="Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="PlanId" class="custom-select">
+                                                <option selected="">Selecciona un Plan</option>
+                                                <option value="0">Prueba</option>
+                                                <option value="1">Básico</option>
+                                                <option value="2">Premium</option>
+                                            </select>
+                                        </div>
+                
+                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                        Cancel</button>
+                                </div>
+                            </div>
+                        </form>
               </div>
             </div>
           </div>
@@ -614,109 +630,6 @@ include("correo.php") ?>
       </div>
     </div>
   </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -730,6 +643,7 @@ include("correo.php") ?>
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  <script src="mainRegistro.js"></script>
 
 </body>
 
