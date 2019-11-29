@@ -206,6 +206,45 @@
     </div>
   </div>
 -->
+<form method="POST" action="validar.php">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Codigo</label>
+      <input type="text" name="codigo" class="form-control mb-2" id="codigo" placeholder="Codigo">
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Plan</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">P</div>
+        </div>
+        <SELECT type="text" name="plan" class="form-control" id="plan" placeholder="Plan">
+        <option selected>Escoge</option>
+        <option value="1">Trial</option>
+        <option value="2">Baico</option>
+        <option value="3">Premium</option>
+        </SELECT>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+         
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="button" class="btn btn-primary mb-2" id="enviar">Enviar</button>
+    </div>
+  </div>
+</form>
 
   <!-- Team -->
   <section class="bg-light page-section" id="team">
