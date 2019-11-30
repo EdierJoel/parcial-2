@@ -177,6 +177,81 @@
           </div>
         </div>
   </section>
+    <!-- FORM PROMO 
+  
+ <div class="contenedor">
+    <article>
+      <button id="btn-abrir-popup" class="btn-abrir-popup">INGRESA TU CODIGO</button>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <form >
+          <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <input type="email" placeholder="Codigo de Promociones">
+          </div>
+              <div class="col-auto my-1">
+      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Escoge</option>
+        <option value="1">Tanda</option>
+        <option value="2">Promoción</option>
+        <option value="3">cañones</option>
+      </select>
+    </div>
+          <input type="submit" class="btn-submit" value="Enviars">
+        </form>
+      </div>
+    </div>
+  </div>
+-->
+<form  action="validate.php" method="post" enctype="multipart/form-data">
+  <center>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Codigo</label>
+      <input type="text" name="codigo" class="form-control mb-2" id="codigo" placeholder="Codigo">
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Plan</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">P</div>
+        </div>
+        
+        <SELECT type="text" name="plan" class="form-control" id="plan" placeholder="Plan">
+        <option selected>Plan</option>
+        <option value="1">Trial</option>
+        <option value="2">Basico</option>
+        <option value="3">Premium</option>
+        </SELECT>
+                <SELECT type="text" name="plan" class="form-control" id="empresa" placeholder="Plan">
+        <option selected>Empresa</option>
+        <option value="1">Cañones</option>
+        <option value="2">Dámda</option>
+        <option value="3">Gastos</option>
+        </SELECT>
+       
+      </div>
+    </div>
+
+
+    <div class="col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+         
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2" id="enviar">Enviar</button>
+    </div>
+  </div>
+   </center>
+</form>
+
 
   <!-- Team -->
   <section class="bg-light page-section" id="team">
@@ -411,29 +486,29 @@ include("correo.php") ?>
                 <form method="POST" action="include/canones.php">
                   <div class="row">
                       <div class="col">
-                          <input type="text" class="form-control" name="nombre_usr" placeholder="Nombre" required="required">
+                          <input type="text" class="form-control" name="nombre_usr" placeholder="Nombre" required>
                       </div>
 
                 <div class="col">
-                <input type="text" class="form-control" name="matricula_usr" placeholder="Matricula" required="required">
+                <input type="text" class="form-control" name="matricula_usr" placeholder="Matricula" required>
                 </div>
                 </div>
                  <br>
                 <div class="form-group">
-                <input type="text" class="form-control" name="telefono_usr" placeholder="Telefono" required="required">
+                <input type="text" class="form-control" name="telefono_usr" placeholder="Telefono" required>
                 </div>
 
                 <div class="row">
                                 <div class="col">
-                <input type="text" class="form-control" name="email_usr" placeholder="Email" required="required">
+                <input type="text" class="form-control" name="email_usr" placeholder="Email" required>
                 </div>
                                 <div class="col">
-                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required="required">
+                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required>
                 </div>
                    </div>
                      <div class="form-group">
                     <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required="required">
+                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required>
                    </div>
                    <br>
                   
@@ -534,19 +609,19 @@ include("correo.php") ?>
                  <br>
                   <form method="POST" action="include/gastos.php">
                   <div class="form-group">
-                  <input type="text" class="form-control" id="nombre_usr  " placeholder="Nombre" required="required">
+                  <input type="text" class="form-control" id="nombre_usr  " placeholder="Nombre" required>
                    </div>
                                    <div class="row">
                                 <div class="col">
-                <input type="text" class="form-control" name="correo_usr" placeholder="Email" required="required">
+                <input type="text" class="form-control" name="correo_usr" placeholder="Email" required>
                 </div>
                                 <div class="col">
-                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required="required">
+                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required>
                 </div>
                    </div>
                    <br>
                      <div class="form-group">
-                  <input type="text" class="form-control" id="id_plan" placeholder="Plan" required="required">
+                  <input type="text" class="form-control" id="id_plan" placeholder="Plan" required>
                    </div>
                   
                    <button type="submit" class="btn btn-primary">Enviar</button>
