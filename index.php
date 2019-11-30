@@ -253,78 +253,6 @@
 </form>
 
 
-<<<<<<< HEAD
-    <!-- FORM PROMO 
-  
- <div class="contenedor">
-    <article>
-      <button id="btn-abrir-popup" class="btn-abrir-popup">INGRESA TU CODIGO</button>
-    <div class="overlay" id="overlay">
-      <div class="popup" id="popup">
-        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-        <form action="">
-          <div class="contenedor-inputs">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="email" placeholder="Codigo de Promociones">
-          </div>
-              <div class="col-auto my-1">
-      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Escoge</option>
-        <option value="1">Tanda</option>
-        <option value="2">Promoción</option>
-        <option value="3">cañones</option>
-      </select>
-    </div>
-          <input type="submit" class="btn-submit" value="Enviars">
-        </form>
-      </div>
-    </div>
-  </div>
--->
-<form method="POST" action="validar.php">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="form-row align-items-center">
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInput">Codigo</label>
-      <input type="text" name="codigo" class="form-control mb-2" id="codigo" placeholder="Codigo">
-    </div>
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInputGroup">Plan</label>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text">P</div>
-        </div>
-        <SELECT type="text" name="plan" class="form-control" id="plan" placeholder="Plan">
-        <option selected>Escoge</option>
-        <option value="1">Trial</option>
-        <option value="2">Baico</option>
-        <option value="3">Premium</option>
-        </SELECT>
-      </div>
-    </div>
-    <div class="col-auto">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-        <label class="form-check-label" for="autoSizingCheck">
-         
-        </label>
-      </div>
-    </div>
-    <div class="col-auto">
-      <button type="button" class="btn btn-primary mb-2" id="enviar">Enviar</button>
-    </div>
-  </div>
-</form>
-
-=======
->>>>>>> e0c67fdd3a20c95236dc886146a8726eed928fab
   <!-- Team -->
   <section class="bg-light page-section" id="team">
     <div class="container">
@@ -471,7 +399,7 @@
         </br>
         </br>
           <div>
-          	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8758113633176!2d-86.84963468509518!3d21.15733998875221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID!5e0!3m2!1sen!2smx!4v1573106611849!5m2!1sen!2smx" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8758113633176!2d-86.84963468509518!3d21.15733998875221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b89869a6fc9%3A0x398517ec43739ce7!2sUNID!5e0!3m2!1sen!2smx!4v1573106611849!5m2!1sen!2smx" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
           <h3 class="section-subheading text-muted">.</h3>
         </div>
