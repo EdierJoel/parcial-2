@@ -177,8 +177,7 @@
           </div>
         </div>
   </section>
-    <!-- FORM PROMO 
-  
+    <!-- FORM PROMO
  <div class="contenedor">
     <article>
       <button id="btn-abrir-popup" class="btn-abrir-popup">INGRESA TU CODIGO</button>
@@ -206,51 +205,52 @@
     </div>
   </div>
 -->
-<form  action="validate.php" method="post" enctype="multipart/form-data">
-  <center>
-  <div class="form-row align-items-center">
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInput">Codigo</label>
-      <input type="text" name="codigo" class="form-control mb-2" id="codigo" placeholder="Codigo">
-    </div>
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInputGroup">Plan</label>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text">P</div>
+<div class="d-flex justify-content-center align-items-center mt-5 mb-5 flex-column">
+  <div>
+    <!-- <form action="validate.php" method="post" enctype="multipart/form-data"> -->
+    <form id="formularioValidarCupon">
+      <div class="form-row">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInput">Codigo</label>
+          <input type="text" name="codigo" class="form-control mb-2" id="codigo" placeholder="Codigo">
         </div>
-        
-        <SELECT type="text" name="plan" class="form-control" id="plan" placeholder="Plan">
-        <option selected>Plan</option>
-        <option value="1">Trial</option>
-        <option value="2">Basico</option>
-        <option value="3">Premium</option>
-        </SELECT>
-                <SELECT type="text" name="plan" class="form-control" id="empresa" placeholder="Plan">
-        <option selected>Empresa</option>
-        <option value="1">Cañones</option>
-        <option value="2">Dámda</option>
-        <option value="3">Gastos</option>
-        </SELECT>
-       
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Plan</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">P</div>
+            </div>
+            <SELECT type="text" name="plan" class="form-control" id="plan" placeholder="Plan">
+            <option selected value="">Plan</option>
+            <option value="1">Trial</option>
+            <option value="2">Basico</option>
+            <option value="3">Premium</option>
+            </SELECT>
+            <SELECT type="text" name="empresa" class="form-control" id="empresa" placeholder="Plan">
+            <option selected value="">Empresa</option>
+            <option value="C">Cañones</option>
+            <option value="T">Dámda</option>
+            <option value="G">Gastos</option>
+            </SELECT>
+          </div>
+        </div>
+        <!-- <div class="col-auto">
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+            </label>
+          </div>
+        </div> -->
+        <div class="col-auto">
+          <button type="button" class="btn btn-primary mb-2" id="enviar">Enviar</button>
+        </div>
       </div>
-    </div>
-
-
-    <div class="col-auto">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-        <label class="form-check-label" for="autoSizingCheck">
-         
-        </label>
-      </div>
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2" id="enviar">Enviar</button>
-    </div>
+    </form>
   </div>
-   </center>
-</form>
+  <div>
+    <span id="mensajeFormularioCupones" class="text-danger"></span>
+  </div>
+</div>
 
 
   <!-- Team -->

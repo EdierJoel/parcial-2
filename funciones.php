@@ -1,10 +1,14 @@
 <?php
- require_once $_SERVER["DOCUMENT_ROOT"].'database.php';
+//  require_once $_SERVER["DOCUMENT_ROOT"].'database.php';
+require_once '_dbcupones.php';
  if ($_POST) {
      switch ($_POST["accion"]) {
         case 'insertarRegistro':
             insertarRegistro();
-            break;
+        break;
+        case 'validarCupon':
+            validarCupon();
+        break;
         // case 'getRegistro':
         // getRegistro($_POST["salones"]);
         // break;
@@ -76,5 +80,18 @@
     //     $respuesta["tiene_canon"] = $obt_salon["tiene_canon"];
     //     $respuesta["status"] = $obt_salon["status"];
     //     echo json_encode($respuesta);
-    // }    
+    // }
+function validarCupon(){
+    global $db;
+    extract($_POST);
+    $consulta = $db->select('Coupon','*',['CouponCode'=>$codigo]);
+    $respuesta = [];
+    if($consulta){
+        $respuesta = $consulta;
+        $respuesta[0]["status"] = 1;
+    } else {
+        $respuesta[0]["status"] = 0;
+    }
+    echo json_encode($respuesta);
+}
 ?>
