@@ -265,7 +265,7 @@
       <div class="row">
         <div class="col-sm-3">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/fonseca.jpeg" alt="">
+            <img class="mx-auto rounded-circle" src="img/team/fonseca.jpg" alt="">
             <h4>Gabriel Fonseca</h4>
             <p class="text-muted">Diseñador Web</p>
             <ul class="list-inline social-buttons">
@@ -313,7 +313,7 @@
         </div>
         <div class="col-sm-3">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/hugo.jpeg" alt="">
+            <img class="mx-auto rounded-circle" src="img/team/hugo.jpg" alt="">
             <h4>Hugo Arroyo</h4>
             <p class="text-muted">Desarrollador Web</p>
             <ul class="list-inline social-buttons">
