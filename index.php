@@ -177,37 +177,8 @@
           </div>
         </div>
   </section>
-    <!-- FORM PROMO
- <div class="contenedor">
-    <article>
-      <button id="btn-abrir-popup" class="btn-abrir-popup">INGRESA TU CODIGO</button>
-    <div class="overlay" id="overlay">
-      <div class="popup" id="popup">
-        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-        <form >
-          <div class="contenedor-inputs">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="email" placeholder="Codigo de Promociones">
-          </div>
-              <div class="col-auto my-1">
-      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Escoge</option>
-        <option value="1">Tanda</option>
-        <option value="2">Promoción</option>
-        <option value="3">cañones</option>
-      </select>
-    </div>
-          <input type="submit" class="btn-submit" value="Enviars">
-        </form>
-      </div>
-    </div>
-  </div>
--->
-<div class="d-flex justify-content-center align-items-center mt-5 mb-5 flex-column">
+ <div class="d-flex justify-content-center align-items-center mt-5 mb-5 flex-column">
   <div>
-    <!-- <form action="validate.php" method="post" enctype="multipart/form-data"> -->
     <form id="formularioValidarCupon">
       <div class="form-row">
         <div class="col-auto">
@@ -234,13 +205,6 @@
             </SELECT>
           </div>
         </div>
-        <!-- <div class="col-auto">
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-            <label class="form-check-label" for="autoSizingCheck">
-            </label>
-          </div>
-        </div> -->
         <div class="col-auto">
           <button type="button" class="btn btn-primary mb-2" id="enviar">Enviar</button>
         </div>
@@ -481,39 +445,39 @@ include("correo.php") ?>
 
 
                 <!--Cañones-->
-                <h2 class="text-uppercase">Cañones</h2>
+                <h3 class="text-uppercase" id="myBtn">Cañones Registro</h3>
                  <br>
-                <form method="POST" action="include/canones.php">
-                  <div class="row">
-                      <div class="col">
-                          <input type="text" class="form-control" name="nombre_usr" placeholder="Nombre" required>
-                      </div>
-
-                <div class="col">
-                <input type="text" class="form-control" name="matricula_usr" placeholder="Matricula" required>
-                </div>
-                </div>
-                 <br>
-                <div class="form-group">
-                <input type="text" class="form-control" name="telefono_usr" placeholder="Telefono" required>
-                </div>
-
-                <div class="row">
-                                <div class="col">
-                <input type="text" class="form-control" name="email_usr" placeholder="Email" required>
-                </div>
-                                <div class="col">
-                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required>
-                </div>
-                   </div>
-                     <div class="form-group">
-                    <label for="inputAddress"></label>
-                  <input type="text" class="form-control" id="codigo" placeholder="Codigo" required>
-                   </div>
-                   <br>
-                  
-                   <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+                <form id="myForm">
+                            <div class="modal-content">
+                                <div class="modal-body" style="padding:20px 30px;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre" required="nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electronico">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserPhone" placeholder="Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="PlanId" class="custom-select">
+                                                <option selected="">Selecciona un Plan</option>
+                                                <option value="0">Prueba</option>
+                                                <option value="1">Básico</option>
+                                                <option value="2">Premium</option>
+                                            </select>
+                                        </div>
+                
+                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
+                                </div>
+                            </div>
+                    </form>
               </div>
             </div>
           </div>
@@ -545,10 +509,10 @@ include("correo.php") ?>
                             <div class="modal-content">
                                 <div class="modal-body" style="padding:20px 30px;">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre/s">
+                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre" required="nombre">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido/s">
+                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
@@ -570,12 +534,8 @@ include("correo.php") ?>
                 
                                         <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
                                 </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
-                                        Cancel</button>
-                                </div>
                             </div>
-                        </form>
+                    </form>
               </div>
             </div>
           </div>
@@ -583,9 +543,6 @@ include("correo.php") ?>
       </div>
     </div>
   </div>
-
-
-
 
   <!-- Modal 3 -->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -600,32 +557,40 @@ include("correo.php") ?>
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
-
-
-
-
                 <!-- GASTOS-->
-                  <h2 class="text-uppercase">Gastos</h2>
+                 <h3 class="text-uppercase" id="myBtn">Gastos Registro</h3>
                  <br>
-                  <form method="POST" action="include/gastos.php">
-                  <div class="form-group">
-                  <input type="text" class="form-control" id="nombre_usr  " placeholder="Nombre" required>
-                   </div>
-                                   <div class="row">
-                                <div class="col">
-                <input type="text" class="form-control" name="correo_usr" placeholder="Email" required>
-                </div>
-                                <div class="col">
-                <input type="text" class="form-control" name="password_usr" placeholder="Contraseña" required>
-                </div>
-                   </div>
-                   <br>
-                     <div class="form-group">
-                  <input type="text" class="form-control" id="id_plan" placeholder="Plan" required>
-                   </div>
-                  
-                   <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+                  <form id="myForm">
+                            <div class="modal-content">
+                                <div class="modal-body" style="padding:20px 30px;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre" required="nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electronico">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="UserPhone" placeholder="Telefono">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="PlanId" class="custom-select">
+                                                <option selected="">Selecciona un Plan</option>
+                                                <option value="0">Prueba</option>
+                                                <option value="1">Básico</option>
+                                                <option value="2">Premium</option>
+                                            </select>
+                                        </div>
+                
+                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
+                                </div>
+                            </div>
+                    </form>
               </div>
             </div>
           </div>

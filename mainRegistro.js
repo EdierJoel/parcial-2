@@ -54,13 +54,11 @@ $(document).ready(function() {
     }
   });
 
-  $("#myBtn").click(function() {
+  $("#btnRegistrar").click(function() {
     obj = {
       accion: "insertarRegistro"
     };
-    // $("#myBtn").hide();
-    // $("#myModal")[0].reset();
-    $("#btnRegistrar").text("Unete");
+  
   });
 
   $("#btnRegistrar").click(function() {
@@ -70,13 +68,6 @@ $(document).ready(function() {
     obj["UserEmail"] = $("#UserEmail").val();
     obj["UserPhone"] = $("#UserPhone").val();
     obj["PlanId"] = $("#PlanId").val();
-
-    // obj.push("UserName", UserName);
-    // obj.push("UserLastname", UserLastname);
-    // obj.push("UserPassword", UserPassword);
-    // obj.push("UserEmail", UserEmail);
-    // obj.push("UserPhone", UserPhone);
-    // obj.push("PlanId", PlanId);
 
     switch (obj.accion) {
       case "insertarRegistro":

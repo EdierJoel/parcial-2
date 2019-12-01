@@ -5,7 +5,7 @@
  try {
      $db = new Medoo([
      'database_type' => 'mysql',
-     'database_name' => 'proyecto-desarrollo',
+     'database_name' => 'dmcFinal',
      'server' => 'smoothoperators.com.mx',
      'username' => 'remote',
      'password' => 'D7AC3D58A7318',
