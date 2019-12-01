@@ -90,6 +90,74 @@ $(document).ready(function() {
     }
   });
 
+  $('#btnRegistrarDamda').click(function(){
+    let fecha_hoy = new Date();
+    let hoy = fecha_hoy.getFullYear() + '/' + (fecha_hoy.getMonth() + 1) + '/' + fecha_hoy.getDate();
+    obj['accion'] = 'insertarEnTabla';
+    obj['whereTo'] = 'damda';
+    obj['UserName'] = $('#UserNameDamda').val();
+    obj['UserLastname'] = $('#UserLastnameDamda').val();
+    obj['UserPassword'] = $('#UserPasswordDamda').val();
+    obj['UserEmail'] = $('#UserEmailDamda').val();
+    obj['UserPhone'] = $('#UserPhoneDamda').val();
+    obj['UserCreated'] = hoy;
+    obj['PlanId'] = $('#PlanIdDamda option:selected').val();
+    String.random = function(lenght){
+      let random13chars = function(){
+        return Math.random().toString(16).substring(2,15);
+      }
+      let loops = Math.ceil(lenght/13);
+      return new Array(loops).fill(random13chars).reduce((string, func)=>{
+        return string + func()
+      }, '').substring(0, lenght);
+    }
+    obj['UserSerial'] = String.random(6);
+    $.post('funciones.php',obj,function(r){
+      if(r.status == 1){
+        $('#mensajeDamda').text('Solicitud enviada correctamente!');
+        $('#formDamda')[0].reset();
+      } else {
+        $('#mensajeDamda').text('error.');
+      }
+    }, "JSON");
+  });
+
+  $('#btnRegistrarGastos').click(function(){
+    let fecha_hoy = new Date();
+    let hoy = fecha_hoy.getFullYear() + '/' + (fecha_hoy.getMonth() + 1) + '/' + fecha_hoy.getDate();
+    obj['accion'] = 'insertarEnTabla';
+    obj['whereTo'] = 'gastos';
+    obj['UserName'] = $('#UserNameGastos').val();
+    obj['UserLastname'] = $('#UserLastnameGastos').val();
+    obj['UserPassword'] = $('#UserPasswordGastos').val();
+    obj['UserEmail'] = $('#UserEmailGastos').val();
+    obj['UserPhone'] = $('#UserPhoneGastos').val();
+    obj['PlanId'] = $('#PlanIdGastos option:selected').val();
+    obj['fechaAlta'] = hoy;
+    String.random = function(lenght){
+      let random13chars = function(){
+        return Math.random().toString(16).substring(2,15);
+      }
+      let loops = Math.ceil(lenght/13);
+      return new Array(loops).fill(random13chars).reduce((string, func)=>{
+        return string + func()
+      }, '').substring(0, lenght);
+    }
+    // console.log(String.random(10));
+    obj['UserSerial'] = String.random(10);
+    let vigencia = fecha_hoy.setDate(fecha_hoy.getDate() + 15);
+    vigencia = fecha_hoy.getFullYear() + '/' + (fecha_hoy.getMonth() + 1) + '/' + fecha_hoy.getDate();
+    obj['fechaBaja'] = vigencia;
+    $.post('funciones.php',obj,function(r){
+      if(r.status == 1){
+        $('#mensajeGastos').text('Solicitud enviada correctamente!');
+        $('#formGastos')[0].reset();
+      } else {
+        $('#mensajeGastos').text('error.');
+      }
+    }, "JSON");
+  });
+
   $("#btn-cancel").click(function() {
     $("#myBtn").show();
   });

@@ -503,39 +503,39 @@ include("correo.php") ?>
 
 
                 <!-- TANDAS -->
-                <h3 class="text-uppercase" id="myBtn">Dámda Registro</h3>
+                <h3 class="text-uppercase">Dámda Registro</h3>
                  <br>
-                <form id="myForm">
+                <form id="formDamda">
                             <div class="modal-content">
                                 <div class="modal-body" style="padding:20px 30px;">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre" required="nombre">
+                                            <input type="text" class="form-control" id="UserNameDamda" placeholder="Nombre" required="nombre">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido">
+                                            <input type="text" class="form-control" id="UserLastnameDamda" placeholder="Apellido">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
+                                            <input type="password" class="form-control" id="UserPasswordDamda" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electronico">
+                                            <input type="email" class="form-control" id="UserEmailDamda" placeholder="Correo Electronico">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserPhone" placeholder="Telefono">
+                                            <input type="text" class="form-control" id="UserPhoneDamda" placeholder="Telefono">
                                         </div>
                                         <div class="form-group">
-                                            <select id="PlanId" class="custom-select">
+                                            <select id="PlanIdDamda" class="custom-select">
                                                 <option selected="">Selecciona un Plan</option>
                                                 <option value="0">Prueba</option>
                                                 <option value="1">Básico</option>
                                                 <option value="2">Premium</option>
                                             </select>
                                         </div>
-                
-                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
+                                        <button type="button" id="btnRegistrarDamda" class="btn btn-success btn-block">Registrate</button>
                                 </div>
                             </div>
                     </form>
+                    <div id="mensajeDamda"></div>
               </div>
             </div>
           </div>
@@ -558,39 +558,39 @@ include("correo.php") ?>
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- GASTOS-->
-                 <h3 class="text-uppercase" id="myBtn">Gastos Registro</h3>
+                 <h3 class="text-uppercase">Gastos Registro</h3>
                  <br>
-                  <form id="myForm">
+                  <form id="formGastos">
                             <div class="modal-content">
                                 <div class="modal-body" style="padding:20px 30px;">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserName" placeholder="Nombre" required="nombre">
+                                            <input type="text" class="form-control" id="UserNameGastos" placeholder="Nombre" required="nombre">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserLastname" placeholder="Apellido">
+                                            <input type="text" class="form-control" id="UserLastnameGastos" placeholder="Apellido">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" id="UserPassword" placeholder="Contraseña">
+                                            <input type="password" class="form-control" id="UserPasswordGastos" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="UserEmail" placeholder="Correo Electronico">
+                                            <input type="email" class="form-control" id="UserEmailGastos" placeholder="Correo Electronico">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="UserPhone" placeholder="Telefono">
+                                            <input type="text" class="form-control" id="UserPhoneGastos" placeholder="Telefono">
                                         </div>
                                         <div class="form-group">
-                                            <select id="PlanId" class="custom-select">
+                                            <select id="PlanIdGastos" class="custom-select">
                                                 <option selected="">Selecciona un Plan</option>
                                                 <option value="0">Prueba</option>
                                                 <option value="1">Básico</option>
                                                 <option value="2">Premium</option>
                                             </select>
                                         </div>
-                
-                                        <button type="button" id="btnRegistrar" class="btn btn-success btn-block">Registrate</button>
+                                        <button type="button" id="btnRegistrarGastos" class="btn btn-success btn-block">Registrate</button>
                                 </div>
                             </div>
                     </form>
+                    <div id="mensajeGastos"></div>
               </div>
             </div>
           </div>
