@@ -253,7 +253,7 @@
         </div>
         <div class="col-sm-3">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/joel.jpg" alt="">
+            <img class="mx-auto rounded-circle" src="img/team/edier.jpg" alt="">
             <h4>Edier Cab</h4>
             <p class="text-muted">Desarrollador Web</p>
             <ul class="list-inline social-buttons">
