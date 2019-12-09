@@ -18,9 +18,8 @@ $(document).ready(function() {
       obj['codigo'] = codigo;
       obj['plan'] = plan;
       obj['empresa'] = empresa;
-      // IQK04YEW
       $('#mensajeFormularioCupones').text('');
-      console.log(obj);
+      // console.log(obj);
       $.post('funciones.php', obj, function(r){
         if(r[0].status == 0){
           $('#mensajeFormularioCupones').text('El código ingresado no existe.');
@@ -32,9 +31,14 @@ $(document).ready(function() {
           let fi = fecha_inicio.split('-').join('/');
           let ff = fecha_fin.split('-').join('/');
           let hoy = fecha_hoy.getFullYear() + '/' + (fecha_hoy.getMonth() + 1) + '/' + fecha_hoy.getDate();
+          let comienzo = new Date(fi);
+          let expiracion = new Date(ff);
+          let today = new Date(hoy);
           // console.log(fi, ff, hoy);
           // console.log(hoy > fi && hoy < ff);
-          if(r[0]['CouponPlatform'].includes(empresa) && (hoy >= fi && hoy <= ff)){
+          // console.log(comienzo, expiracion, today);
+          // console.log(today >= comienzo && today <= expiracion);
+          if(r[0]['CouponPlatform'].includes(empresa) && (today >= comienzo && today <= expiracion)){
             let emp = null;
             if(empresa == 'T'){
               emp = 'Tanda';
@@ -44,7 +48,7 @@ $(document).ready(function() {
               emp = 'Cañones'
             }
             $('#mensajeFormularioCupones').text('Cupón válido para '+ emp);
-          } else if(!(hoy >= fi && hoy <= ff)){
+          } else if(!(today >= comienzo && today <= expiracion)){
             $('#mensajeFormularioCupones').text('El código ingresado ha expirado!');
           }else{
             $('#mensajeFormularioCupones').text('El código ingresado no es válido para la aplicación elegida.');
@@ -58,7 +62,6 @@ $(document).ready(function() {
     obj = {
       accion: "insertarRegistro"
     };
-  
   });
 
   $("#btnRegistrar").click(function() {
@@ -93,8 +96,7 @@ $(document).ready(function() {
   $('#btnRegistrarDamda').click(function(){
     let fecha_hoy = new Date();
     let hoy = fecha_hoy.getFullYear() + '/' + (fecha_hoy.getMonth() + 1) + '/' + fecha_hoy.getDate();
-    obj['accion'] = 'insertarEnTabla';
-    obj['whereTo'] = 'damda';
+    obj['accion'] = 'insertarRegistro';
     obj['UserName'] = $('#UserNameDamda').val();
     obj['UserLastname'] = $('#UserLastnameDamda').val();
     obj['UserPassword'] = $('#UserPasswordDamda').val();
@@ -125,8 +127,7 @@ $(document).ready(function() {
   $('#btnRegistrarGastos').click(function(){
     let fecha_hoy = new Date();
     let hoy = fecha_hoy.getFullYear() + '/' + (fecha_hoy.getMonth() + 1) + '/' + fecha_hoy.getDate();
-    obj['accion'] = 'insertarEnTabla';
-    obj['whereTo'] = 'gastos';
+    obj['accion'] = 'insertarRegistro';
     obj['UserName'] = $('#UserNameGastos').val();
     obj['UserLastname'] = $('#UserLastnameGastos').val();
     obj['UserPassword'] = $('#UserPasswordGastos').val();
