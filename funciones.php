@@ -10,6 +10,12 @@ require_once 'database.php';
         case 'validarCupon':
             validarCupon();
         break;
+        case 'login':
+            login();
+        break;
+        case 'couponToUser':
+            couponToUser();
+        break;
         // case 'insertarEnTabla':
         //     insertarEnTabla();
         // break;
@@ -20,7 +26,6 @@ require_once 'database.php';
  }
     function insertarRegistro(){
         global $db;
-        global $mysqli;
         extract($_POST);
         $UserName=json_decode($UserName);
         $UserLastname=json_decode($UserLastname);
@@ -39,11 +44,9 @@ require_once 'database.php';
         $UserPhone = $_POST['UserPhone'];
         $PlanId = $_POST['PlanId'];
 
-        if (empty($UserName) && empty($UserLastname) && empty($UserPassword) && empty($UserSerial) && empty($UserEmail) && empty($UserPhone) && empty($PlanId)) {
+        if (empty($UserName) || empty($UserLastname) || empty($UserPassword) || empty($UserSerial) || empty($UserEmail) || empty($UserPhone) || empty($PlanId)) {
              $respuesta["status"] = 0;
-
         }else{
-
             $db->insert("User",[
                  "UserName" => $UserName,
                  "UserLastname" => $UserLastname,
@@ -58,7 +61,6 @@ require_once 'database.php';
                  "LevelId" => 0
              ]);
              $respuesta["status"] = 1;
-
         }
         echo json_encode($respuesta);
 }
@@ -73,6 +75,36 @@ function validarCupon(){
         $respuesta[0]["status"] = 1;
     } else {
         $respuesta[0]["status"] = 0;
+    }
+    echo json_encode($respuesta);
+}
+
+function login(){
+    global $db;
+    extract($_POST);
+    $consulta = $db->get('User','*',['UserEmail'=>$UserEmail, 'UserPassword'=>$UserPassword]);
+    $respuesta = [];
+    if($consulta){
+        $respuesta = $consulta;
+        $respuesta["status"] = 1;
+    } else {
+        $respuesta["status"] = 0;
+    }
+    echo json_encode($respuesta);
+}
+
+function couponToUser(){
+    global $db;
+    extract($_POST);
+    $respuesta = [];
+    $consulta = $db->insert('CouponsWithUsers', [
+        'UserSerial'=>$UserSerial,
+        'CouponCode'=>$CouponCode
+    ]);
+    if($consulta){
+        $respuesta["status"] = 1;
+    } else {
+        $respuesta["status"] = 0;
     }
     echo json_encode($respuesta);
 }

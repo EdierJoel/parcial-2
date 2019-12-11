@@ -598,12 +598,76 @@ include("correo.php") ?>
       </div>
     </div>
   </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="modallogin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="modallogin-title">Canjear cupón</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modallogin-content">
+            <p class="form-text">Para canjear tu cupón es necesario que ingreses la cuenta con la quieres hacer válido tu cupón, o bien, registrarte una nueva cuenta.</p>
+            <form id="modallogin-form">
+              <div class="form-group">
+                <label for="">Correo:</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" id="UserEmailLogin">
+                <small id="emailHelp" class="form-text text-muted">Ingresa tu correo</small>
+              </div>
+              <div class="form-group">
+                <label for="">Contraseña:</label>
+                <input type="password" class="form-control" id="UserPasswordLogin">
+              </div>
+              <div class="mb-2">
+                <small class="form-text text-muted">¿No tienes cuenta? <a href="#" class="text-primary" id="modallogin-registrolink">Regístrate</a></small>
+              </div>
+            </form>
+            <form id="modallogin-registro" style="display: none;">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="UserNameModalLogin" placeholder="Nombre" required="nombre">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="UserLastnameModalLogin" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="UserPasswordModalLogin" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="UserEmailModalLogin" placeholder="Correo Electronico">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="UserPhoneModalLogin" placeholder="Telefono">
+                </div>
+                <div class="form-group">
+                    <select id="PlanIdModalLogin" class="custom-select">
+                        <option selected="">Selecciona un Plan</option>
+                        <option value="0">Prueba</option>
+                        <option value="1">Básico</option>
+                        <option value="2">Premium</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                  <small class="form-text text-muted">¿Ya tienes cuenta? <a href="#" class="text-primary" id="modallogin-loginlink">Iniciar sesión</a></small>
+                </div>
+            </form>
+            <div id="showmessage" class="text-center"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="modallogin-submit" data-check="login">Canjear cupón</button>
+          </div>
+        </div>
+      </div>
+  </div>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- jQuery cookie -->
+  <script src="node_modules/js-cookie/src/js.cookie.js"></script>
 
   <!-- Contact form JavaScript -->
 
