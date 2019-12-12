@@ -1,3 +1,11 @@
+<?php
+require_once 'db.php';
+
+$consulA="SELECT * FROM app";
+$app=mysqli_query($conectar,$consulA);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,26 +108,20 @@
         </div>
       </div>
       <div class="row text-center">
+
+      <?php while ($appli=mysqli_fetch_array($app)){?>
         <div class="col-md-4">
            </br>
          <img class="img-fluid d-block mx-auto" src="img/logotipo.png" alt="">
           </br>
-          <h4 class="service-heading">Cañones</h4>
-          <p class="text-muted">Nos decidimos a desarrollar un sistema con el cuál podrás llevar un control sobre los apartados de Cañones, este proyecto está hecho para todo el público, pero en específico a las escuelas y empresas que cuentan con estos equipos.</p>
+          <h4 class="service-heading"><?php echo $appli['nombre_app'] ?></h4>
+          <p class="text-muted" align="justify"><?php echo $appli['desc_app'] ?></p>
         </div>
-        <div class="col-md-4">
-            <img class="img-fluid d-block mx-auto" src="img/damda1.png" alt="">
-             </br>
-          <h4 class="service-heading">Dámda</h4>
-          <p class="text-muted">A veces se nos complica el ahorro de dinero y se nos es muy difícil buscar una manera para hacerlo,  por lo que ofrecemos este gran sistema con el cuál tu podrás organizar tus propias tandas entre familiares o amigos, tú decides la duración y monto. "Tandeando tu futuro"</p>
-        </div>
-        <div class="col-md-4">
-         </br>
-            <img class="img-fluid d-block mx-auto" src="img/MS-Logo.png" alt="">
-             </br>
-          <h4 class="service-heading">Gastos</h4>
-          <p class="text-muted">"MoneySafe" Es una empresa con un centro de operación en la ciudad de Cancún quintana roo México y enfoca sus actividades en proporcionar servicios de desarrollo de software. Nuestra empresa se encuentra conformada por un equipo de profesionales en Tecnologías de la Información y Comunicación.</p>
-        </div>
+
+    
+
+        <?php } ?> 
+
       </div>
     </div>
   </section>
